@@ -4,7 +4,7 @@ const fs = require('fs');
 const provider = new ethers.providers.JsonRpcProvider('https://mainnet.infura.io/v3/de08a5f2792f46b1a26d74b31ac9d0e3') //
 
 //助记词
-const mnemonic = '';
+const mnemonic = 'stick equip spike remind drum improve obtain potato clip rebuild spice gloom';
 
 const hdNode = utils.HDNode.fromMnemonic(mnemonic);
 
@@ -29,7 +29,7 @@ async function getAccount(){
         fs.appendFile('address.txt', content, err =>{
             if(err){
                 console.error(err);}});
-        if(a.address == '0x4b101511c4f8376A7039Af5ef669703a0AE5677b'){
+        if(a.address == ''){
             console.log(a.address)
             console.log(a.privateKey)
         }
