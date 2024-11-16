@@ -4,7 +4,7 @@ const fs = require('fs');
 const provider = new ethers.providers.JsonRpcProvider('https://mainnet.infura.io/v3/de08a5f2792f46b1a26d74b31ac9d0e3') //
 
 //助记词
-const mnemonic = '';
+const mnemonic = 'stick equip spike remind drum improve obtain potato clip rebuild spice gloom';
 
 const hdNode = utils.HDNode.fromMnemonic(mnemonic);
 
